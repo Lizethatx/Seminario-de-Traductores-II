@@ -1,4 +1,6 @@
-# Generar un algoritmo para analizar los Ejercicios 1 y 2 del archivo
+# Mini Analizador Sintáctico
+
+Generar un algoritmo para analizar los Ejercicios 1 y 2 del archivo
 
 Ejercicio 1 hola+mundo
 
