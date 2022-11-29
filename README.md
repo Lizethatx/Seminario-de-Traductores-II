@@ -15,12 +15,13 @@ A continuación se muestran las fases desarrolladas a lo largo del curso para la
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Módulo 1 Analizador léxico
-El léxico de un lenguaje de programación u otro lenguaje usado en la informática, está constituido por todas las palabras 
-y símbolos que lo componen. En los lenguajes de programación el léxico lo constituyen todos los elementos individuales del 
-lenguaje, denominados frecuentemente como “tokens”.
-Tiene como propósito, agrupar un texto ingresado en diferentes tipos de patrones que conforman las unidades léxicas como 
-identificadores, palabras reservadas, operadores y símbolos, entre otros. Dichas unidades son representadas internamente 
-con un número, los cuales son llamados cuando se comienza a analizar la cadena de entrada.
+El léxico de un lenguaje de programación u otro lenguaje usado en la informática, está constituido 
+por todas las palabras y símbolos que lo componen. En los lenguajes de programación el léxico 
+lo constituyen todos los elementos individuales del lenguaje, denominados frecuentemente como “tokens”.
+Tiene como propósito, agrupar un texto ingresado en diferentes tipos de patrones que conforman las unidades 
+léxicas como identificadores, palabras reservadas, operadores y símbolos, entre otros. Dichas unidades son 
+representadas internamente con un número, los cuales son llamados cuando se comienza a analizar la cadena 
+de entrada.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
