@@ -84,12 +84,12 @@ el software que comprueba, procesa y reenvía las instrucciones del código fuen
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#### _Mini analizador sintáctico_:
+### _Mini analizador sintáctico_:
 La creación de este submódulo hace uso del analizador sintáctico LR, el cual se basa en una pila de enteros que es la que va guardando el estado y las reglas con forme se va analizando la cadena hasta que se llega a un estado de aceptación.
 
 Generar un algoritmo para analizar los Ejercicios 1 y 2 del archivo
 
-##### Ejercicio 1 hola+mundo
+#### Ejercicio 1 hola+mundo
 
 ![image](https://user-images.githubusercontent.com/75290686/204434575-bc526d6d-b07b-4c9f-952e-13e832d83dbf.png)
 ![image](https://user-images.githubusercontent.com/75290686/204434547-96a8c81f-e9fb-4787-9397-706d726c79bc.png)
@@ -105,13 +105,13 @@ Generar un algoritmo para analizar los Ejercicios 1 y 2 del archivo
 ![image](https://user-images.githubusercontent.com/75290686/196600232-9b1b9350-1a97-4c1e-8c9a-80f6b87b8f85.png)
 ![image](https://user-images.githubusercontent.com/75290686/196600389-66303109-fe68-4796-b631-c074ceac14db.png)
 
-#### _Analizador sintáctico implementando objetos_:
+### _Analizador sintáctico implementando objetos_:
 En esta práctica se hizo uso de la pila de objetos a diferencia de la pasada que fue una pila de enteros. Al momento de imprimir la pila aparecen los símbolos
 Para realizarla se necesitó implementar dentro del código 3 clases nuevas, las cuales heredan del Elemento Pila. Estas clases nuevas corresponden a Terminal, No terminal y Estado.
 
 ![image](https://user-images.githubusercontent.com/75290686/189804439-68c72ad3-092d-4983-a497-513ecc09c7bd.png)
 
-#### _Gramática del compilador_:
+### _Gramática del compilador_:
 En esta entrega se cargó e implementó una gramática al analizador léxico. La gramática está contenida en un archivo .lr donde se encuentra la información de la grmática con las tabla LR(1) codificada para ser cargada en una matriz de enteros y la cual es leída por el programa. 
 En el archivo .inf se indica la constante que se debe asignar al analizador léxico para cada símbolo. Además de que es en este archivo donde aparecen todas las reglas numeradas (necesarias para hacer reducciones).
 
@@ -121,7 +121,17 @@ _Ejemplo de gramática int hola;_
 ![image](https://user-images.githubusercontent.com/75290686/204452072-a993361b-139e-4480-9415-1aab55e9fa7c.png)
 ![image](https://user-images.githubusercontent.com/75290686/204452107-6c1f08ac-79e0-4d64-b794-3e2f7449999c.png)
 
+## Analizador Semántico
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Modulo 3 Analizador semántico
+El analizador semántico es la siguiente fase de un compilador, después del analizador 
+sintáctico. Su principal función consiste en el análisis contextual de las instrucciones del 
+lenguaje de programación para su posterior implementación en lenguaje máquina. Se analiza una
+estructura de instrucciones en un árbol semántico y luego comparan los diferentes componentes 
+individuales en búsqueda de errores en la programación. Este utiliza la estructura que generamos
+en el analizador sintáctico a partir de los tokens obtenidos del analizador léxico.
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
+### Árbol sintáctico
