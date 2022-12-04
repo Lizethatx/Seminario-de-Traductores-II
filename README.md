@@ -112,7 +112,7 @@ Para realizarla se necesitó implementar dentro del código 3 clases nuevas, las
 ![image](https://user-images.githubusercontent.com/75290686/189804439-68c72ad3-092d-4983-a497-513ecc09c7bd.png)
 
 ### _Gramática del compilador_:
-En esta entrega se cargó e implementó una gramática al analizador léxico. La gramática está contenida en un archivo .lr donde se encuentra la información de la grmática con las tabla LR(1) codificada para ser cargada en una matriz de enteros y la cual es leída por el programa. 
+En esta entrega se cargó e implementó una gramática al analizador léxico. La gramática está contenida en un archivo .lr donde se encuentra la información de la gramática con las tabla LR(1) codificada para ser cargada en una matriz de enteros y la cual es leída por el programa. 
 En el archivo .inf se indica la constante que se debe asignar al analizador léxico para cada símbolo. Además de que es en este archivo donde aparecen todas las reglas numeradas (necesarias para hacer reducciones).
 
 _Ejemplo de gramática int hola;_
@@ -134,4 +134,38 @@ en el analizador sintáctico a partir de los tokens obtenidos del analizador lé
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-### Árbol sintáctico
+### _Árbol sintáctico_
+En el programa anterior se utilizó una pila de objetos, ahora para realizar el análisis semántico fue necesario generar un arbol sintactico en el cual se almacenan las definiciones de funciones, variables y expresiones.
+
+_Ejemplo 
+int a;
+int suma(int a, int b){
+return a+b;}_
+
+![image](https://user-images.githubusercontent.com/75290686/205476146-b9dac526-4a61-4aa4-abc9-21c1c0d0e697.png)
+
+### _Análisis semántico_
+
+Para la creación de este módulo se aregaron tres atributos más a la clase nodo, así mismo se agregó un método encargado de validadr los tipos de datos. Además se implementaron tres métodos más en la tabla de símobolos (agrega).
+
+A continuación se muestra el funcionamiento del análisis semántico
+
+_Ejemplo_
+
+int main(){
+
+float a;
+
+int b;
+
+int c;
+
+c = a+b;
+
+c = suma(8,9);
+
+}
+
+![image](https://user-images.githubusercontent.com/75290686/205480129-102dfb4c-d024-4055-a1d1-a6775e16136c.png)
+
+
