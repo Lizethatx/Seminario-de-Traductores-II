@@ -135,7 +135,7 @@ en el analizador sintáctico a partir de los tokens obtenidos del analizador lé
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### _Árbol sintáctico_
-En el programa anterior se utilizó una pila de objetos, ahora para realizar el análisis semántico fue necesario generar un arbol sintactico en el cual se almacenan las definiciones de funciones, variables y expresiones.
+En el programa anterior se utilizó una pila de objetos, ahora para realizar el análisis semántico fue necesario generar un arbol sintáctico en el cual se almacenan las definiciones de funciones, variables y expresiones.
 
 _Ejemplo 
 int a;
@@ -146,7 +146,7 @@ return a+b;}_
 
 ### _Análisis semántico_
 
-Para la creación de este módulo se aregaron tres atributos más a la clase nodo, así mismo se agregó un método encargado de validadr los tipos de datos. Además se implementaron tres métodos más en la tabla de símobolos (agrega).
+Para la creación de este módulo se aregaron tres atributos más a la clase nodo, así mismo se agregó un método encargado de validar los tipos de datos. Además se implementaron tres métodos más en la tabla de símobolos (agrega).
 
 A continuación se muestra el funcionamiento del análisis semántico
 
