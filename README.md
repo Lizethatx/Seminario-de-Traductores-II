@@ -12,7 +12,7 @@ Alumna: Lizeth Avendaño Garcia
 
 A continuación se muestran las fases desarrolladas a lo largo del curso para la creación de un compilador básico creado en el lenguaje de programación C++.
 
-El código completo se pdorá descargar desde el apartado proyecto final en este mismo repositorio
+El código completo se podrá descargar desde el apartado proyecto final en este mismo repositorio.
 
 ## Analizador Léxico
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
